@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aodhan Moran's Resume - Matrix Theme</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="matrix-bg"></canvas>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-links">
+                <a href="https://www.linkedin.com/in/aodhanman/" target="_blank">LinkedIn</a>
+                <a href="https://github.com/aodhanman" target="_blank">GitHub</a>
+                <button id="theme-toggle">Toggle Theme</button>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Aodhan Moran</h1>
+        <p>Software Engineer | Cloud Architect | AI Innovator</p>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm Aodhan, a Software Engineer at Amazon Web Services (AWS), specializing in full-stack development, cloud computing, and AI/ML solutions. Connect with me on <a href="https://www.linkedin.com/in/aodhanman/" target="_blank">LinkedIn</a> or explore my projects on <a href="https://github.com/aodhanman" target="_blank">GitHub</a>.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill">
+            <p>Python</p>
+            <div class="progress-bar"><div class="progress" data-width="90"></div></div>
+        </div>
+        <div class="skill">
+            <p>JavaScript</p>
+            <div class="progress-bar"><div class="progress" data-width="85"></div></div>
+        </div>
+        <div class="skill">
+            <p>AWS</p>
+            <div class="progress-bar"><div class="progress" data-width="80"></div></div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <h2>Portfolio</h2>
+        <div class="portfolio-grid">
+            <div class="project">
+                <img src="images/my-app.png" alt="Screenshot of My App project">
+                <h3><a href="https://github.com/aodhanman/my-app" target="_blank">My App</a></h3>
+                <p>A full-stack web application built using React, Node.js, and AWS.</p>
+            </div>
+            <div class="project">
+                <img src="images/igndata.png" alt="Screenshot of IGNDATA project">
+                <h3><a href="https://github.com/aodhanman/IGNDATA" target="_blank">IGNDATA</a></h3>
+                <p>A web scraping tool developed with Python and Pandas.</p>
+            </div>
+            <div class="project">
+                <img src="images/algorithms.png" alt="Snippet of algorithm code">
+                <h3><a href="https://github.com/aodhanman/Algorithms" target="_blank">Algorithms</a></h3>
+                <p>Efficient algorithms and data structures implemented in Python and Java.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <label for="message">Message</label>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p id="form-message"></p>
+    </section>
+
+    <footer>
+        <p>Connect with me on <a href="https://www.linkedin.com/in/aodhanman/" target="_blank">LinkedIn</a> or <a href="https://github.com/aodhanman" target="_blank">GitHub</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
